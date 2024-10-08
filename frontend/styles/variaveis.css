@@ -53,3 +53,9 @@
   --corner-extra-large: 28px;
   --corner-full: 50%;
 }
+
+/* Zerar margins e padding */
+* {
+  margin: 0;
+  padding: 0;
+}
