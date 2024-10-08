@@ -54,7 +54,7 @@
   --corner-full: 50%;
 }
 
-/* Zerar margins e padding */
+/* Zerar margins e paddings */
 * {
   margin: 0;
   padding: 0;
@@ -63,4 +63,11 @@
 body {
   /* Tipografia padrão */
   font-family: var(--fonte-corpo);
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-destaque);
 }
