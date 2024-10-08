@@ -33,6 +33,11 @@
     transform: translateX(100%);
     /* Transição suave de deslizar ao ser exibida */
     transition: transform 0.3s ease;
+    /* Exibir o sidebar */
+    &.visivel {
+      /* Deslizar para dentro da tela */
+      transform: translateX(0);
+    }
   }
 
   /* Div com os botões de login */
