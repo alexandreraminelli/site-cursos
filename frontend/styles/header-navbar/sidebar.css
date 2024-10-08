@@ -3,8 +3,30 @@
 /* Sidebar que contém a navbar e botões de login */
 /* Aparece como uma navbar no mobile e no próprio header no desktop */
 
+/* Div sidebar no mobile */
 @media screen and (max-width: 768px) {
   #sidebar-header {
-    display: none;
+    /* Fixar na tela */
+    position: fixed;
+
+    /* Aparência */
+    background-color: var(--transparente-escuro);
+    backdrop-filter: blur(var(--valor-blur-padrao));
+    /* Sombra */
+    box-shadow: -2px 0 15px 2px rgba(0, 0, 0, 0.5);
+
+    /* Dimensões */
+    height: 100vh;
+    width: 55vw;
+    /* Posição */
+    right: 0; /* lado direito da tela */
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre navbar e botões de login */
+
+    /* Espaçamento */
+    padding-top: 10px;
   }
 }
