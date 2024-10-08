@@ -28,6 +28,29 @@
 
     /* Espaçamento */
     padding-top: 10px;
+
+    /* Ocultar sidebar fora da tela */
+    transform: translateX(100%);
+    /* Transição suave de deslizar ao ser exibida */
+    transition: transform 0.3s ease;
+    /* Exibir o sidebar */
+    &.visivel {
+      /* Deslizar para dentro da tela */
+      transform: translateX(0);
+    }
+  }
+
+  /* Botão que fecha o sidebar */
+  #botao-fechar-sidebar {
+    background: none;
+    /* Alinhar à direita, mesmo o flexbox alinhe ao centro */
+    align-self: flex-end;
+    margin-right: 10px; /* adicionar espaço entre o botão e o fim da tela */
+
+    /* Ícone SVG */
+    &::before {
+      content: url("../../assets/svgs/ui-icons/ui-actions/fechar.svg");
+    }
   }
 
   /* Div com os botões de login */
