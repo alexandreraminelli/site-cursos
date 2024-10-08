@@ -52,6 +52,9 @@
   --corner-large: 16px;
   --corner-extra-large: 28px;
   --corner-full: 50%;
+
+  /* Container */
+  --container: 1260px;
 }
 
 /* Zerar margins e paddings */
@@ -70,4 +73,10 @@ h1,
 h2,
 h3 {
   font-family: var(--fonte-destaque);
+}
+
+/* Container */
+.container {
+  max-width: var(--container);
+  margin: auto;
 }
