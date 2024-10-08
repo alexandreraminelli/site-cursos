@@ -45,3 +45,14 @@ header#cabecalho-pagina {
     -webkit-text-fill-color: transparent;
   }
 }
+
+/* Botão de menu hamburguer */
+#botao-menu-hamburguer {
+  /* Remover background */
+  background: none;
+
+  /* Adicionar svg */
+  &::before {
+    content: url("../../assets/svgs/ui-icons/ui-actions/menu.svg");
+  }
+}
