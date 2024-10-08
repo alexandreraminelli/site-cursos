@@ -49,9 +49,34 @@ nav#navbar-header {
       border-radius: 0 var(--corner-small) var(--corner-small) 0;
       /*   Transição */
       transition: background-color 0.25s;
+      /*   Linha que aparece à esquerda no hover */
+      &::before {
+        content: "";
+
+        /* Dimensões da linha */
+        width: 4px; /* Espessura */
+        height: 0; /* Ocultar por padrão */
+
+        /* Espaço entre linha e texto do link
+        (simular "padding-left" do <a>)*/
+        margin-right: 15px;
+
+        /* Cor da linha */
+        background: linear-gradient(to top, var(--gradiente02));
+
+        /* Transição pro hover */
+        transition: height 0.4s, margin-right 0.5s;
+      }
       /*   Pseudo-classe hover */
       &:hover {
         background-color: var(--transparente-branco);
+        /*   Exibir linha no efeito hover */
+        &::before {
+          /* Exibir a linha */
+          height: 100%;
+          /* Deslocar levemente os links pra direita */
+          margin-right: 20px;
+        }
       }
     }
   }
