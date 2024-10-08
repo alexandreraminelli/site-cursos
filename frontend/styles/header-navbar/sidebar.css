@@ -29,4 +29,13 @@
     /* Espaçamento */
     padding-top: 10px;
   }
+
+  /* Div com os botões de login */
+  #opcoes-login-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre os botões */
+
+    padding: 0 20px; /* Limitar larguras dos botões, que estão usando 100% de width */
+  }
 }
