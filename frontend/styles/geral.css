@@ -2,3 +2,8 @@
 
 /* Variáveis CSS */
 @import url("variaveis.css");
+
+/* Componentes */
+@import url("comps/botoes.css");
+
+/* Header */

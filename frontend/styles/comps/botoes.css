@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* CSS para botões */
+
+/* Botões no geral */
+button {
+  /* Cursor do mouse */
+  cursor: pointer;
+
+  /* Remover borda */
+  border: none;
+}
+
+/* Estilo de botão 01 */
+.botao-estilo-01 {
+  /* Aparência */
+  border-radius: var(--corner-extra-small);
+
+  /* Dimensões e espaçamento */
+  padding: 5px 20px;
+
+  /* Tipografia */
+  font-size: 1.375rem;
+  text-wrap: nowrap; /* não quebrar */
+}
+
+/* Botão primário */
+.botao-primario {
+  /* Cor do botão */
+  background: var(--cor-primaria);
+
+  /* Cor do texto */
+  color: var(--letra-branca);
+}
+.botao-primario:hover {
+  background: linear-gradient(to top left, var(--gradiente-roxo02));
+}
+
+/* Botão secundário */
+.botao-secundario {
+  /* Cor do botão */
+  background-color: var(--transparente-branco);
+
+  /* Cor do texto */
+  color: var(--letra-branca);
+
+  /* Transição pro efeito hover */
+  transition: background-color 0.5s;
+}
+.botao-secundario:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
