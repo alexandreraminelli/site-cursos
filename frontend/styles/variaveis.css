@@ -33,6 +33,7 @@
   /*  Gradientes */
   --gradiente01: var(--roxo-claro), var(--roxo), var(--azul);
   --gradiente02: #4f47a5 0%, #6e45a6 43%, #974cac 100%;
+  --gradiente03: #904aab, #5a46a5, #507bc6;
   --gradiente-azul01: #70d0dc 0%, #426abc 27%, #3957af 100%;
   --gradiente-azul02: #5384cc 0%, #4253ad 58%, #4344a3 100%;
   --gradiente-roxo01: #8a6ebe 0%, #5d4aa8 50%, #4c3499 100%;
@@ -66,6 +67,9 @@
 body {
   /* Tipografia padrão */
   font-family: var(--fonte-corpo);
+
+  /* Background para visualização do header */
+  background-color: #616161;
 }
 
 /* Títulos */

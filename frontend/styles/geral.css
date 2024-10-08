@@ -6,4 +6,6 @@
 /* Componentes */
 @import url("comps/botoes.css");
 
-/* Header */
+/* Header e navbar */
+@import url("header-navbar/header.css");
+@import url("header-navbar/sidebar.css");

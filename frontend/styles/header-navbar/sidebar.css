@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Sidebar que contém a navbar e botões de login */
+/* Aparece como uma navbar no mobile e no próprio header no desktop */
+
+#sidebar-header {
+  display: none;
+}
