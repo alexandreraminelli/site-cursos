@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Importação da fonte de destaque (Roboto) no Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Variáveis CSS */
+:root {
+  /* Paleta de cores */
+  /*   Cores principais */
+  --roxo: #4c3499;
+  --roxo-claro: #974cac;
+  --azul: #507bc6;
+  --azul-claro: #70d0dc;
+  /*   Preto/escuro */
+  --escuro01: #161616;
+  /*   Branco */
+  --branco01: #f5f5f5;
+
+  /*  Tipos de cores */
+  --cor-primaria: var(--roxo);
+  --cor-secundaria: var(--azul);
+
+  /*  Cores transparêntes */
+  /*   Transparente escuro */
+  --transparente-escuro: rgba(0, 0, 0, 0.75);
+  /*   Transparente branco */
+  --transparente-branco: rgba(245, 245, 245, 0.25);
+
+  /*  Cor fonte */
+  --letra-branca: white;
+  --letra-escura: black;
+
+  /*  Gradientes */
+  --gradiente01: var(--roxo-claro), var(--roxo), var(--azul);
+  --gradiente02: #4f47a5 0%, #6e45a6 43%, #974cac 100%;
+  --gradiente-azul01: #70d0dc 0%, #426abc 27%, #3957af 100%;
+  --gradiente-azul02: #5384cc 0%, #4253ad 58%, #4344a3 100%;
+  --gradiente-roxo01: #8a6ebe 0%, #5d4aa8 50%, #4c3499 100%;
+  --gradiente-roxo02: #974cac 0%, #6e45a6 43%, #4f47a5 100%;
+
+  /* Tipografia */
+  --fonte-destaque: "Roboto", Arial, Helvetica, system-ui, sans-serif;
+  --fonte-corpo: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* Efeito blur */
+  --valor-blur-padrao: 20px;
+
+  /* Corner (border-radius) */
+  --corner-extra-small: 4px;
+  --corner-small: 8px;
+  --corner-medium: 12px;
+  --corner-large: 16px;
+  --corner-extra-large: 28px;
+  --corner-full: 50%;
+}
