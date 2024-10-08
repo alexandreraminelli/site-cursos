@@ -1,0 +1,13 @@
+{
+  "name": "dev-academy",
+  "version": "1.0.0",
+  "description": "Projeto fictício de uma plataforma de cursos online, desenvolvido para praticar habilidades de front-end (HTML, CSS, JavaScript) e back-end (NodeJS). O sistema permite a criação, exibição e gerenciamento de cursos, integrando uma interface interativa com um back-end funcional.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alexandre Raminelli Junior (https://github.com/alexandreraminelli)",
+  "license": "ISC"
+}
