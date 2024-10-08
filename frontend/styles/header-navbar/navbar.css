@@ -2,6 +2,9 @@
 
 /* Estilos gerais para o navbar */
 nav#navbar-header {
+  /* Flexbox */
+  display: flex;
+
   /* Elementos filhos */
   & ul {
     /* Remover marcador de lista */

@@ -40,6 +40,19 @@
     }
   }
 
+  /* Botão que fecha o sidebar */
+  #botao-fechar-sidebar {
+    background: none;
+    /* Alinhar à direita, mesmo o flexbox alinhe ao centro */
+    align-self: flex-end;
+    margin-right: 10px; /* adicionar espaço entre o botão e o fim da tela */
+
+    /* Ícone SVG */
+    &::before {
+      content: url("../../assets/svgs/ui-icons/ui-actions/fechar.svg");
+    }
+  }
+
   /* Div com os botões de login */
   #opcoes-login-header {
     display: flex;
