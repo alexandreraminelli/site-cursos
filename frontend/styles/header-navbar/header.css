@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Estilo geral para o header da página */
+header#cabecalho-pagina {
+  /* Aparência */
+  background-color: var(--transparente-escuro);
+  border-radius: 0 0 var(--corner-small) var(--corner-small);
+
+  /* Dimensões */
+  width: calc(100vw - 20px); /* toda a tela menos o padding */
+  height: 65px;
+
+  /* Espaçamento */
+  padding: 0 10px;
+
+  /* Layout e flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Logo e título do header */
+#logo-titulo-header {
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* alinhar título ao meio */
+  gap: 4px; /* espaço entre logo e título */
+
+  /* Elementos filhos */
+  /*    Logo SVG */
+  & img {
+    height: 100%;
+    width: auto;
+  }
+  /*    Título */
+  & h1 {
+    /* Tipografia */
+    font-size: 1.25rem;
+    font-weight: normal;
+
+    /* Cor de texto gradiente */
+    background: linear-gradient(to left, var(--gradiente03));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Botão de menu hamburguer */
+#botao-menu-hamburguer {
+  /* Remover background */
+  background: none;
+
+  /* Adicionar svg */
+  &::before {
+    content: url("../../assets/svgs/ui-icons/ui-actions/menu.svg");
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página -->
+    <title>DevAcademy</title>
+
+    <!-- Estilos CSS gerais do site -->
+    <link rel="stylesheet" href="styles/geral.css" />
+
+    <!-- Estilos CSS da página -->
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header id="cabecalho-pagina">
+      <!-- Logo e título -->
+      <div id="logo-titulo-header">
+        <img src="assets/svgs/logo.svg" alt="Logo da DevAcademy" />
+        <h1>DevAcademy</h1>
+      </div>
+      <!-- Elementos ocultos na versão mobile -->
+      <div id="sidebar-header">
+        <!-- Navbar -->
+        <nav id="navbar-header">
+          <!-- Botão que fecha a sidebar mobile -->
+          <button id="botao-fechar-sidebar"></button>
+          <ul>
+            <li><a href="#" id="link-pagina-atual">Início</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Ajuda</a></li>
+          </ul>
+        </nav>
+        <!-- Opções de login -->
+        <div id="opcoes-login-header">
+          <button id="botao-login-header" class="botao-secundario botao-estilo-01">Fazer Login</button>
+          <button id="botao-matricula-header" class="botao-primario botao-estilo-01">Matricule-se</button>
+        </div>
+      </div>
+      <!-- Botão de menu hamburguer -->
+      <button id="botao-menu-hamburguer"></button>
+    </header>
+
+    <!-- Scripts JS -->
+    <!--   Sidebar/navbar responsivo -->
+    <script src="js/scripts-frontend/sidebar-responsivo.js"></script>
+  </body>
+</html>
