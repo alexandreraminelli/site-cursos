@@ -21,9 +21,14 @@ nav#navbar-header {
     display: flex;
     align-items: center;
 
-    /*   Link da página atual */
+    /*   Destacar link da página atual */
     &#link-pagina-atual {
       color: var(--azul-claro);
+
+      /* Linha ao lado do links */
+      &::before {
+        background-image: linear-gradient(to top, var(--gradiente-azul01));
+      }
     }
   }
 }
