@@ -59,3 +59,8 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  /* Tipografia padrão */
+  font-family: var(--fonte-corpo);
+}
