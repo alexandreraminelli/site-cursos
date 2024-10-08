@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* Sidebar que contém a navbar e botões de login */
+/* Aparece como uma navbar no mobile e no próprio header no desktop */
+
+/* Div sidebar no mobile */
+@media screen and (max-width: 768px) {
+  #sidebar-header {
+    /* Fixar na tela */
+    position: fixed;
+
+    /* Aparência */
+    background-color: var(--transparente-escuro);
+    backdrop-filter: blur(var(--valor-blur-padrao));
+    /* Sombra */
+    box-shadow: -2px 0 15px 2px rgba(0, 0, 0, 0.5);
+
+    /* Dimensões */
+    height: 100vh;
+    width: 55vw;
+    /* Posição */
+    right: 0; /* lado direito da tela */
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre navbar e botões de login */
+
+    /* Espaçamento */
+    padding-top: 10px;
+
+    /* Ocultar sidebar fora da tela */
+    transform: translateX(100%);
+    /* Transição suave de deslizar ao ser exibida */
+    transition: transform 0.3s ease;
+    /* Exibir o sidebar */
+    &.visivel {
+      /* Deslizar para dentro da tela */
+      transform: translateX(0);
+    }
+  }
+
+  /* Botão que fecha o sidebar */
+  #botao-fechar-sidebar {
+    background: none;
+    /* Alinhar à direita, mesmo o flexbox alinhe ao centro */
+    align-self: flex-end;
+    margin-right: 10px; /* adicionar espaço entre o botão e o fim da tela */
+
+    /* Ícone SVG */
+    &::before {
+      content: url("../../assets/svgs/ui-icons/ui-actions/fechar.svg");
+    }
+  }
+
+  /* Div com os botões de login */
+  #opcoes-login-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre os botões */
+
+    padding: 0 20px; /* Limitar larguras dos botões, que estão usando 100% de width */
+  }
+}
