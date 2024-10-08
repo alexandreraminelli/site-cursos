@@ -28,6 +28,11 @@
 
     /* Espaçamento */
     padding-top: 10px;
+
+    /* Ocultar sidebar fora da tela */
+    transform: translateX(100%);
+    /* Transição suave de deslizar ao ser exibida */
+    transition: transform 0.3s ease;
   }
 
   /* Div com os botões de login */
