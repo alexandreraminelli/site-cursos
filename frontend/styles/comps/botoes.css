@@ -31,9 +31,11 @@ button {
 
   /* Cor do texto */
   color: var(--letra-branca);
-}
-.botao-primario:hover {
-  background: linear-gradient(to top left, var(--gradiente-roxo02));
+
+  /* Efeito hover */
+  &:hover {
+    background: linear-gradient(to top left, var(--gradiente-roxo02));
+  }
 }
 
 /* Botão secundário */
@@ -46,7 +48,9 @@ button {
 
   /* Transição pro efeito hover */
   transition: background-color 0.5s;
-}
-.botao-secundario:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+
+  /* Efeito hover */
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
