@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/* Device Breakpoint:
+    Mobile base: 360px - 375px
+    Mobile large (portrait): < 480px
+    Mobile (landscape): < 768px
+    Tablet: < 1024px
+    Small desktop: < 1440px
+    Large desktop: > 1440px
+*/
+
 /* Variáveis CSS */
 @import url("variaveis.css");
 
@@ -9,4 +18,6 @@
 /* Header e navbar */
 @import url("header-navbar/header.css");
 @import url("header-navbar/sidebar.css");
+/*   Navbar */
 @import url("header-navbar/navbar.css");
+@import url("header-navbar/navbar-mobile.css") screen and (max-width: 768px);
