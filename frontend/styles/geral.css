@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/* Device Breakpoint:
+    Mobile base: 360px - 375px
+    Mobile large (portrait): < 480px
+    Mobile (landscape): < 768px
+    Tablet: < 1024px
+    Small desktop: < 1440px
+    Large desktop: > 1440px
+*/
+
 /* Variáveis CSS */
 @import url("variaveis.css");
 
